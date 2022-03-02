@@ -4243,7 +4243,7 @@
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                8824
+                8831
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">        while is_identifier_tail(self.chars.peek()) {</pre>
@@ -4256,7 +4256,7 @@
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                8211
+                8218
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">            lexeme_buffer.push(self.chars.consume());</pre>
@@ -4269,7 +4269,7 @@
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                8211
+                8218
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">        }</pre>
@@ -4958,7 +4958,7 @@
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                1081
+                1080
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">        _ =&gt; return None,</pre>
@@ -5010,7 +5010,7 @@
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                1125
+                1124
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">}</pre>
@@ -5296,7 +5296,7 @@
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                8824
+                8831
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">fn is_identifier_tail(ch: char) -&gt; bool {</pre>
@@ -5309,7 +5309,7 @@
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                8824
+                8831
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">    matches!(ch, &#x27;a&#x27;..=&#x27;z&#x27; | &#x27;A&#x27;..=&#x27;Z&#x27; | &#x27;_&#x27; | &#x27;0&#x27;..=&#x27;9&#x27;)</pre>
@@ -5322,7 +5322,7 @@
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                8825
+                8831
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">}</pre>
@@ -10226,7 +10226,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">    struct TokenIter&lt;&#x27;input&gt; {</pre>
+                <pre class="has-background-white py-0 px-2">    struct TokenKindAndLexemeIter&lt;&#x27;input&gt; {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -10291,7 +10291,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">    impl&lt;&#x27;input&gt; TokenIter&lt;&#x27;input&gt; {</pre>
+                <pre class="has-background-white py-0 px-2">    impl&lt;&#x27;input&gt; TokenKindAndLexemeIter&lt;&#x27;input&gt; {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -10304,7 +10304,7 @@
                 660
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        fn new(input_text: &amp;&#x27;input str) -&gt; TokenIter&lt;&#x27;input&gt; {</pre>
+                <pre class="has-background-success-light py-0 px-2">        fn new(input_text: &amp;&#x27;input str) -&gt; TokenKindAndLexemeIter&lt;&#x27;input&gt; {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -10356,7 +10356,7 @@
                 660
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            TokenIter {</pre>
+                <pre class="has-background-success-light py-0 px-2">            TokenKindAndLexemeIter {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -10447,7 +10447,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">    impl&lt;&#x27;input&gt; Iterator for TokenIter&lt;&#x27;input&gt; {</pre>
+                <pre class="has-background-white py-0 px-2">    impl&lt;&#x27;input&gt; Iterator for TokenKindAndLexemeIter&lt;&#x27;input&gt; {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -10668,7 +10668,7 @@
                 260
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        let tok_iter = TokenIter::new(input_text);</pre>
+                <pre class="has-background-success-light py-0 px-2">        let tok_iter = TokenKindAndLexemeIter::new(input_text);</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -10811,7 +10811,7 @@
                 400
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        let mut tok_stream = TokenIter::new(input_text);</pre>
+                <pre class="has-background-success-light py-0 px-2">        let mut tok_stream = TokenKindAndLexemeIter::new(input_text);</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -10855,7 +10855,7 @@
         </div></div>
         <footer class="footer">
             <div class="content has-text-centered">
-                <p class="heading">Date: 2022-03-02 21:53</p>
+                <p class="heading">Date: 2022-03-02 21:56</p>
             </div>
         </footer>
     </body>
