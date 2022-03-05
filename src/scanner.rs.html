@@ -3726,7 +3726,7 @@
                 234
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">                    prev_peek = self.chars.peek();</pre>
+                <pre class="has-background-success-light py-0 px-2">                    prev_peek = self.chars.consume();</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -3739,7 +3739,7 @@
                 234
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">                    self.chars.consume();</pre>
+                <pre class="has-background-success-light py-0 px-2">                }</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -3748,11 +3748,11 @@
                 <a href="#286">286</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                234
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
             </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">                }</pre>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -3765,26 +3765,13 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
+                <pre class="has-background-white py-0 px-2">                &#x2F;&#x2F; TODO: Improve this code&#x27;s readability.</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
                 id="288">
                 <a href="#288">288</a>
-            </div>
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
-            </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">                &#x2F;&#x2F; TODO: Improve this code&#x27;s readability.</pre>
-            </div>
-        </div><div class="columns p-0 m-0">
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered"
-                id="289">
-                <a href="#289">289</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -3796,8 +3783,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="290">
-                <a href="#290">290</a>
+                id="289">
+                <a href="#289">289</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -3805,6 +3792,19 @@
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">                    (prev_peek, self.chars.peek()),</pre>
+            </div>
+        </div><div class="columns p-0 m-0">
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered"
+                id="290">
+                <a href="#290">290</a>
+            </div>
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
+            </div>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2">                    (&#x27;p&#x27; | &#x27;P&#x27; | &#x27;e&#x27; | &#x27;E&#x27;, &#x27;+&#x27; | &#x27;-&#x27;)</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -3817,7 +3817,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">                    (&#x27;p&#x27; | &#x27;P&#x27; | &#x27;e&#x27; | &#x27;E&#x27;, &#x27;+&#x27; | &#x27;-&#x27;)</pre>
+                <pre class="has-background-white py-0 px-2">                ) {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -3826,11 +3826,11 @@
                 <a href="#292">292</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                4
             </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">                ) {</pre>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">                    let sign_char = self.chars.consume();</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -3843,26 +3843,13 @@
                 4
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">                    let sign_char = self.chars.consume();</pre>
+                <pre class="has-background-success-light py-0 px-2">                    debug_assert_matches!(sign_char, &#x27;+&#x27; | &#x27;-&#x27;);</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
                 id="294">
                 <a href="#294">294</a>
-            </div>
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                4
-            </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">                    debug_assert_matches!(sign_char, &#x27;+&#x27; | &#x27;-&#x27;);</pre>
-            </div>
-        </div><div class="columns p-0 m-0">
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered"
-                id="295">
-                <a href="#295">295</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
@@ -3874,8 +3861,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="296">
-                <a href="#296">296</a>
+                id="295">
+                <a href="#295">295</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -3883,6 +3870,19 @@
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">                    while self.chars.peek().is_ascii_alphanumeric() {</pre>
+            </div>
+        </div><div class="columns p-0 m-0">
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered"
+                id="296">
+                <a href="#296">296</a>
+            </div>
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                16
+            </div>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">                        self.chars.consume();</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -3895,26 +3895,13 @@
                 16
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">                        self.chars.consume();</pre>
+                <pre class="has-background-success-light py-0 px-2">                    }</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
                 id="298">
                 <a href="#298">298</a>
-            </div>
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                16
-            </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">                    }</pre>
-            </div>
-        </div><div class="columns p-0 m-0">
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered"
-                id="299">
-                <a href="#299">299</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -3926,8 +3913,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="300">
-                <a href="#300">300</a>
+                id="299">
+                <a href="#299">299</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
@@ -3939,8 +3926,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="301">
-                <a href="#301">301</a>
+                id="300">
+                <a href="#300">300</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -3952,8 +3939,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="302">
-                <a href="#302">302</a>
+                id="301">
+                <a href="#301">301</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
@@ -3965,8 +3952,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="303">
-                <a href="#303">303</a>
+                id="302">
+                <a href="#302">302</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -3974,6 +3961,19 @@
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">            ch if is_identifier_head(ch) =&gt; self.scan_identifier_or_keyword(ch),</pre>
+            </div>
+        </div><div class="columns p-0 m-0">
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered"
+                id="303">
+                <a href="#303">303</a>
+            </div>
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered has-text-danger-light has-background-danger">
+                
+            </div>
+            <div class="column has-background-danger-light p-0">
+                <pre class="has-background-danger-light py-0 px-2">            unrecognized_char =&gt; {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -3986,7 +3986,7 @@
                 
             </div>
             <div class="column has-background-danger-light p-0">
-                <pre class="has-background-danger-light py-0 px-2">            unrecognized_char =&gt; {</pre>
+                <pre class="has-background-danger-light py-0 px-2">                unimplemented!(&quot;character not recognized: `{}`&quot;, unrecognized_char)</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -3995,11 +3995,11 @@
                 <a href="#305">305</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-danger-light has-background-danger">
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
                 
             </div>
-            <div class="column has-background-danger-light p-0">
-                <pre class="has-background-danger-light py-0 px-2">                unimplemented!(&quot;character not recognized: `{}`&quot;, unrecognized_char)</pre>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2">            }</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4012,7 +4012,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">            }</pre>
+                <pre class="has-background-white py-0 px-2">        };</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4025,7 +4025,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">        };</pre>
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4034,11 +4034,11 @@
                 <a href="#308">308</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                702
             </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">        let span_end = self.chars.peek_byte_pos();</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4051,7 +4051,7 @@
                 702
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        let span_end = self.chars.peek_byte_pos();</pre>
+                <pre class="has-background-success-light py-0 px-2">        let token_span = Span {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4064,7 +4064,7 @@
                 702
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        let token_span = Span {</pre>
+                <pre class="has-background-success-light py-0 px-2">            start: span_start,</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4077,7 +4077,7 @@
                 702
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            start: span_start,</pre>
+                <pre class="has-background-success-light py-0 px-2">            end: span_end,</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4090,7 +4090,7 @@
                 702
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            end: span_end,</pre>
+                <pre class="has-background-success-light py-0 px-2">        };</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4103,7 +4103,7 @@
                 702
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        };</pre>
+                <pre class="has-background-success-light py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4116,26 +4116,13 @@
                 702
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2"></pre>
+                <pre class="has-background-success-light py-0 px-2">        Ok(Spanned::new(Token { kind: token_kind }, token_span))</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
                 id="315">
                 <a href="#315">315</a>
-            </div>
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                702
-            </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        Ok(Spanned::new(Token { kind: token_kind }, token_span))</pre>
-            </div>
-        </div><div class="columns p-0 m-0">
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered"
-                id="316">
-                <a href="#316">316</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4147,8 +4134,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="317">
-                <a href="#317">317</a>
+                id="316">
+                <a href="#316">316</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
@@ -4156,6 +4143,19 @@
             </div>
             <div class="column has-background-white p-0">
                 <pre class="has-background-white py-0 px-2"></pre>
+            </div>
+        </div><div class="columns p-0 m-0">
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered"
+                id="317">
+                <a href="#317">317</a>
+            </div>
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                613
+            </div>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">    fn scan_identifier_or_keyword(&amp;mut self, ident_head: char) -&gt; TokenKind {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4168,7 +4168,7 @@
                 613
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    fn scan_identifier_or_keyword(&amp;mut self, ident_head: char) -&gt; TokenKind {</pre>
+                <pre class="has-background-success-light py-0 px-2">        debug_assert!(is_identifier_head(ident_head), &quot;char: `{}`&quot;, ident_head);</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4177,11 +4177,11 @@
                 <a href="#319">319</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                613
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
             </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        debug_assert!(is_identifier_head(ident_head), &quot;char: `{}`&quot;, ident_head);</pre>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4190,11 +4190,11 @@
                 <a href="#320">320</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                613
             </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">        let mut lexeme_buffer = String::with_capacity(16);</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4207,7 +4207,7 @@
                 613
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        let mut lexeme_buffer = String::with_capacity(16);</pre>
+                <pre class="has-background-success-light py-0 px-2">        lexeme_buffer.push(ident_head);</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4216,11 +4216,11 @@
                 <a href="#322">322</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                613
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
             </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        lexeme_buffer.push(ident_head);</pre>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4229,11 +4229,11 @@
                 <a href="#323">323</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                9060
             </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">        while is_identifier_tail(self.chars.peek()) {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4243,10 +4243,10 @@
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                8864
+                8447
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        while is_identifier_tail(self.chars.peek()) {</pre>
+                <pre class="has-background-success-light py-0 px-2">            lexeme_buffer.push(self.chars.consume());</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4256,10 +4256,10 @@
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                8251
+                8447
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            lexeme_buffer.push(self.chars.consume());</pre>
+                <pre class="has-background-success-light py-0 px-2">        }</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4268,11 +4268,11 @@
                 <a href="#326">326</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                8251
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
             </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        }</pre>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4281,11 +4281,11 @@
                 <a href="#327">327</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                613
             </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">        get_keyword_kind_for_lexeme(&amp;lexeme_buffer).unwrap_or(TokenKind::Identifier)</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4298,7 +4298,7 @@
                 613
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        get_keyword_kind_for_lexeme(&amp;lexeme_buffer).unwrap_or(TokenKind::Identifier)</pre>
+                <pre class="has-background-success-light py-0 px-2">    }</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4307,11 +4307,11 @@
                 <a href="#329">329</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                613
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
             </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    }</pre>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2">}</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4324,7 +4324,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">}</pre>
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4337,7 +4337,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
+                <pre class="has-background-white py-0 px-2">&#x2F;&#x2F; TODO: Test.</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4346,11 +4346,11 @@
                 <a href="#332">332</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                1125
             </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">&#x2F;&#x2F; TODO: Test.</pre>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">fn get_keyword_kind_for_lexeme(lexeme: &amp;str) -&gt; Option&lt;TokenKind&gt; {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4363,7 +4363,7 @@
                 1125
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">fn get_keyword_kind_for_lexeme(lexeme: &amp;str) -&gt; Option&lt;TokenKind&gt; {</pre>
+                <pre class="has-background-success-light py-0 px-2">    let keyword_kind = match lexeme {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4376,26 +4376,13 @@
                 1125
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    let keyword_kind = match lexeme {</pre>
+                <pre class="has-background-success-light py-0 px-2">        &quot;auto&quot; =&gt; TokenKind::KwAuto,</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
                 id="335">
                 <a href="#335">335</a>
-            </div>
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                1125
-            </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        &quot;auto&quot; =&gt; TokenKind::KwAuto,</pre>
-            </div>
-        </div><div class="columns p-0 m-0">
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered"
-                id="336">
-                <a href="#336">336</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4407,8 +4394,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="337">
-                <a href="#337">337</a>
+                id="336">
+                <a href="#336">336</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4420,8 +4407,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="338">
-                <a href="#338">338</a>
+                id="337">
+                <a href="#337">337</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4433,8 +4420,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="339">
-                <a href="#339">339</a>
+                id="338">
+                <a href="#338">338</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4446,8 +4433,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="340">
-                <a href="#340">340</a>
+                id="339">
+                <a href="#339">339</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4459,8 +4446,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="341">
-                <a href="#341">341</a>
+                id="340">
+                <a href="#340">340</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4472,8 +4459,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="342">
-                <a href="#342">342</a>
+                id="341">
+                <a href="#341">341</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4485,8 +4472,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="343">
-                <a href="#343">343</a>
+                id="342">
+                <a href="#342">342</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4498,8 +4485,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="344">
-                <a href="#344">344</a>
+                id="343">
+                <a href="#343">343</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4511,8 +4498,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="345">
-                <a href="#345">345</a>
+                id="344">
+                <a href="#344">344</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4524,8 +4511,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="346">
-                <a href="#346">346</a>
+                id="345">
+                <a href="#345">345</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4537,8 +4524,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="347">
-                <a href="#347">347</a>
+                id="346">
+                <a href="#346">346</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4550,8 +4537,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="348">
-                <a href="#348">348</a>
+                id="347">
+                <a href="#347">347</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4563,8 +4550,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="349">
-                <a href="#349">349</a>
+                id="348">
+                <a href="#348">348</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4576,8 +4563,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="350">
-                <a href="#350">350</a>
+                id="349">
+                <a href="#349">349</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4589,8 +4576,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="351">
-                <a href="#351">351</a>
+                id="350">
+                <a href="#350">350</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4602,8 +4589,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="352">
-                <a href="#352">352</a>
+                id="351">
+                <a href="#351">351</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4615,8 +4602,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="353">
-                <a href="#353">353</a>
+                id="352">
+                <a href="#352">352</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4628,8 +4615,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="354">
-                <a href="#354">354</a>
+                id="353">
+                <a href="#353">353</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4641,8 +4628,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="355">
-                <a href="#355">355</a>
+                id="354">
+                <a href="#354">354</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4654,8 +4641,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="356">
-                <a href="#356">356</a>
+                id="355">
+                <a href="#355">355</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4667,8 +4654,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="357">
-                <a href="#357">357</a>
+                id="356">
+                <a href="#356">356</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4680,8 +4667,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="358">
-                <a href="#358">358</a>
+                id="357">
+                <a href="#357">357</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4693,8 +4680,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="359">
-                <a href="#359">359</a>
+                id="358">
+                <a href="#358">358</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4706,8 +4693,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="360">
-                <a href="#360">360</a>
+                id="359">
+                <a href="#359">359</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4719,8 +4706,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="361">
-                <a href="#361">361</a>
+                id="360">
+                <a href="#360">360</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4732,8 +4719,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="362">
-                <a href="#362">362</a>
+                id="361">
+                <a href="#361">361</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4745,8 +4732,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="363">
-                <a href="#363">363</a>
+                id="362">
+                <a href="#362">362</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4758,8 +4745,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="364">
-                <a href="#364">364</a>
+                id="363">
+                <a href="#363">363</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4771,8 +4758,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="365">
-                <a href="#365">365</a>
+                id="364">
+                <a href="#364">364</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4784,8 +4771,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="366">
-                <a href="#366">366</a>
+                id="365">
+                <a href="#365">365</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4797,8 +4784,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="367">
-                <a href="#367">367</a>
+                id="366">
+                <a href="#366">366</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4810,8 +4797,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="368">
-                <a href="#368">368</a>
+                id="367">
+                <a href="#367">367</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4823,8 +4810,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="369">
-                <a href="#369">369</a>
+                id="368">
+                <a href="#368">368</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4836,8 +4823,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="370">
-                <a href="#370">370</a>
+                id="369">
+                <a href="#369">369</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4849,8 +4836,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="371">
-                <a href="#371">371</a>
+                id="370">
+                <a href="#370">370</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4862,8 +4849,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="372">
-                <a href="#372">372</a>
+                id="371">
+                <a href="#371">371</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4875,8 +4862,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="373">
-                <a href="#373">373</a>
+                id="372">
+                <a href="#372">372</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4888,8 +4875,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="374">
-                <a href="#374">374</a>
+                id="373">
+                <a href="#373">373</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4901,8 +4888,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="375">
-                <a href="#375">375</a>
+                id="374">
+                <a href="#374">374</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4914,8 +4901,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="376">
-                <a href="#376">376</a>
+                id="375">
+                <a href="#375">375</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4927,8 +4914,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="377">
-                <a href="#377">377</a>
+                id="376">
+                <a href="#376">376</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4940,8 +4927,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="378">
-                <a href="#378">378</a>
+                id="377">
+                <a href="#377">377</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4953,8 +4940,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="379">
-                <a href="#379">379</a>
+                id="378">
+                <a href="#378">378</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -4962,6 +4949,19 @@
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">        _ =&gt; return None,</pre>
+            </div>
+        </div><div class="columns p-0 m-0">
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered"
+                id="379">
+                <a href="#379">379</a>
+            </div>
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
+            </div>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2">    };</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -4974,26 +4974,13 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">    };</pre>
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
                 id="381">
                 <a href="#381">381</a>
-            </div>
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
-            </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
-            </div>
-        </div><div class="columns p-0 m-0">
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered"
-                id="382">
-                <a href="#382">382</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -5005,8 +4992,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="383">
-                <a href="#383">383</a>
+                id="382">
+                <a href="#382">382</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -5018,8 +5005,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="384">
-                <a href="#384">384</a>
+                id="383">
+                <a href="#383">383</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
@@ -5031,8 +5018,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="385">
-                <a href="#385">385</a>
+                id="384">
+                <a href="#384">384</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -5040,6 +5027,19 @@
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">fn is_whitespace_char(ch: char) -&gt; bool {</pre>
+            </div>
+        </div><div class="columns p-0 m-0">
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered"
+                id="385">
+                <a href="#385">385</a>
+            </div>
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
+            </div>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2">    const SPACE: char = &#x27; &#x27;;</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5052,7 +5052,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">    const SPACE: char = &#x27; &#x27;;</pre>
+                <pre class="has-background-white py-0 px-2">    const TAB: char = &#x27;\t&#x27;;</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5065,7 +5065,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">    const TAB: char = &#x27;\t&#x27;;</pre>
+                <pre class="has-background-white py-0 px-2">    const LINE_FEED: char = &#x27;\n&#x27;;</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5078,7 +5078,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">    const LINE_FEED: char = &#x27;\n&#x27;;</pre>
+                <pre class="has-background-white py-0 px-2">    const CARRIAGE_RETURN: char = &#x27;\r&#x27;;</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5091,7 +5091,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">    const CARRIAGE_RETURN: char = &#x27;\r&#x27;;</pre>
+                <pre class="has-background-white py-0 px-2">    const VERTICAL_TAB: char = &#x27;\x0b&#x27;;</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5104,7 +5104,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">    const VERTICAL_TAB: char = &#x27;\x0b&#x27;;</pre>
+                <pre class="has-background-white py-0 px-2">    const FORM_FEED: char = &#x27;\x0c&#x27;;</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5117,26 +5117,13 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">    const FORM_FEED: char = &#x27;\x0c&#x27;;</pre>
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
                 id="392">
                 <a href="#392">392</a>
-            </div>
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
-            </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
-            </div>
-        </div><div class="columns p-0 m-0">
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered"
-                id="393">
-                <a href="#393">393</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -5148,8 +5135,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="394">
-                <a href="#394">394</a>
+                id="393">
+                <a href="#393">393</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -5157,6 +5144,19 @@
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">        ch,</pre>
+            </div>
+        </div><div class="columns p-0 m-0">
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered"
+                id="394">
+                <a href="#394">394</a>
+            </div>
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
+            </div>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2">        SPACE | TAB | LINE_FEED | CARRIAGE_RETURN | VERTICAL_TAB | FORM_FEED,</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5169,7 +5169,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">        SPACE | TAB | LINE_FEED | CARRIAGE_RETURN | VERTICAL_TAB | FORM_FEED,</pre>
+                <pre class="has-background-white py-0 px-2">    )</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5178,11 +5178,11 @@
                 <a href="#396">396</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                879
             </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">    )</pre>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">}</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5191,11 +5191,11 @@
                 <a href="#397">397</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                879
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
             </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">}</pre>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5208,7 +5208,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
+                <pre class="has-background-white py-0 px-2">&#x2F;&#x2F; TODO(feroldi): Test.</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5217,11 +5217,11 @@
                 <a href="#399">399</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                1226
             </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">&#x2F;&#x2F; TODO(feroldi): Test.</pre>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">fn is_identifier_head(ch: char) -&gt; bool {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5234,7 +5234,7 @@
                 1226
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">fn is_identifier_head(ch: char) -&gt; bool {</pre>
+                <pre class="has-background-success-light py-0 px-2">    matches!(ch, &#x27;a&#x27;..=&#x27;z&#x27; | &#x27;A&#x27;..=&#x27;Z&#x27; | &#x27;_&#x27;)</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5247,7 +5247,7 @@
                 1226
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    matches!(ch, &#x27;a&#x27;..=&#x27;z&#x27; | &#x27;A&#x27;..=&#x27;Z&#x27; | &#x27;_&#x27;)</pre>
+                <pre class="has-background-success-light py-0 px-2">}</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5256,11 +5256,11 @@
                 <a href="#402">402</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                1226
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
             </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">}</pre>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5273,7 +5273,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
+                <pre class="has-background-white py-0 px-2">&#x2F;&#x2F; TODO(feroldi): Test.</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5282,11 +5282,11 @@
                 <a href="#404">404</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                9059
             </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">&#x2F;&#x2F; TODO(feroldi): Test.</pre>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">fn is_identifier_tail(ch: char) -&gt; bool {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5296,10 +5296,10 @@
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                8864
+                9059
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">fn is_identifier_tail(ch: char) -&gt; bool {</pre>
+                <pre class="has-background-success-light py-0 px-2">    matches!(ch, &#x27;a&#x27;..=&#x27;z&#x27; | &#x27;A&#x27;..=&#x27;Z&#x27; | &#x27;_&#x27; | &#x27;0&#x27;..=&#x27;9&#x27;)</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5309,10 +5309,10 @@
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                8864
+                9076
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    matches!(ch, &#x27;a&#x27;..=&#x27;z&#x27; | &#x27;A&#x27;..=&#x27;Z&#x27; | &#x27;_&#x27; | &#x27;0&#x27;..=&#x27;9&#x27;)</pre>
+                <pre class="has-background-success-light py-0 px-2">}</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5321,11 +5321,11 @@
                 <a href="#407">407</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                8864
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
             </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">}</pre>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5338,7 +5338,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
+                <pre class="has-background-white py-0 px-2">#[cfg(test)]</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5351,7 +5351,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">#[cfg(test)]</pre>
+                <pre class="has-background-white py-0 px-2">mod tests {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5364,7 +5364,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">mod tests {</pre>
+                <pre class="has-background-white py-0 px-2">    use super::{Bracket, Scanner, Token, TokenKind};</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5377,7 +5377,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">    use super::{Bracket, Scanner, Token, TokenKind};</pre>
+                <pre class="has-background-white py-0 px-2">    use crate::source_map::SourceFile;</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5390,7 +5390,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">    use crate::source_map::SourceFile;</pre>
+                <pre class="has-background-white py-0 px-2">    use proptest::prelude::*;</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5403,7 +5403,7 @@
                 
             </div>
             <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2">    use proptest::prelude::*;</pre>
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5412,11 +5412,11 @@
                 <a href="#414">414</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                1
             </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">    #[test]</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5429,7 +5429,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    #[test]</pre>
+                <pre class="has-background-success-light py-0 px-2">    fn scanning_an_empty_input_should_return_an_eof_token() {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5442,7 +5442,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    fn scanning_an_empty_input_should_return_an_eof_token() {</pre>
+                <pre class="has-background-success-light py-0 px-2">        let mut scanner = Scanner::with_input(&quot;&quot;);</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5455,7 +5455,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        let mut scanner = Scanner::with_input(&quot;&quot;);</pre>
+                <pre class="has-background-success-light py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5468,7 +5468,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2"></pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scanner.scan_next_token(), Ok(Token::EOF));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5481,7 +5481,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scanner.scan_next_token(), Ok(Token::EOF));</pre>
+                <pre class="has-background-success-light py-0 px-2">    }</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5490,11 +5490,11 @@
                 <a href="#420">420</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                1
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
             </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    }</pre>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5503,11 +5503,11 @@
                 <a href="#421">421</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                1
             </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">    #[test]</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5520,7 +5520,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    #[test]</pre>
+                <pre class="has-background-success-light py-0 px-2">    fn scan_punctuations() {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5533,7 +5533,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    fn scan_punctuations() {</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;(&quot;), (TokenKind::Open(Bracket::Round), &quot;(&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5546,7 +5546,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;(&quot;), (TokenKind::Open(Bracket::Round), &quot;(&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;)&quot;), (TokenKind::Closed(Bracket::Round), &quot;)&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5559,7 +5559,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;)&quot;), (TokenKind::Closed(Bracket::Round), &quot;)&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;[&quot;), (TokenKind::Open(Bracket::Square), &quot;[&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5572,7 +5572,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;[&quot;), (TokenKind::Open(Bracket::Square), &quot;[&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;]&quot;), (TokenKind::Closed(Bracket::Square), &quot;]&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5585,7 +5585,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;]&quot;), (TokenKind::Closed(Bracket::Square), &quot;]&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;{&quot;), (TokenKind::Open(Bracket::Curly), &quot;{&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5598,7 +5598,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;{&quot;), (TokenKind::Open(Bracket::Curly), &quot;{&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;}&quot;), (TokenKind::Closed(Bracket::Curly), &quot;}&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5611,7 +5611,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;}&quot;), (TokenKind::Closed(Bracket::Curly), &quot;}&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;.&quot;), (TokenKind::Period, &quot;.&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5624,7 +5624,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;.&quot;), (TokenKind::Period, &quot;.&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;-&gt;&quot;), (TokenKind::Arrow, &quot;-&gt;&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5637,7 +5637,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;-&gt;&quot;), (TokenKind::Arrow, &quot;-&gt;&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;++&quot;), (TokenKind::PlusPlus, &quot;++&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5650,7 +5650,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;++&quot;), (TokenKind::PlusPlus, &quot;++&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;--&quot;), (TokenKind::MinusMinus, &quot;--&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5663,7 +5663,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;--&quot;), (TokenKind::MinusMinus, &quot;--&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&amp;&quot;), (TokenKind::Ampersand, &quot;&amp;&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5676,7 +5676,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&amp;&quot;), (TokenKind::Ampersand, &quot;&amp;&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;*&quot;), (TokenKind::Star, &quot;*&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5689,7 +5689,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;*&quot;), (TokenKind::Star, &quot;*&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;+&quot;), (TokenKind::Plus, &quot;+&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5702,7 +5702,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;+&quot;), (TokenKind::Plus, &quot;+&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;-&quot;), (TokenKind::Minus, &quot;-&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5715,7 +5715,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;-&quot;), (TokenKind::Minus, &quot;-&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;~&quot;), (TokenKind::Tilde, &quot;~&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5728,7 +5728,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;~&quot;), (TokenKind::Tilde, &quot;~&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;!&quot;), (TokenKind::Exclamation, &quot;!&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5741,7 +5741,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;!&quot;), (TokenKind::Exclamation, &quot;!&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&#x2F;&quot;), (TokenKind::Slash, &quot;&#x2F;&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5754,7 +5754,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&#x2F;&quot;), (TokenKind::Slash, &quot;&#x2F;&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;%&quot;), (TokenKind::Percent, &quot;%&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5767,7 +5767,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;%&quot;), (TokenKind::Percent, &quot;%&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&lt;&lt;&quot;), (TokenKind::LessLess, &quot;&lt;&lt;&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5780,7 +5780,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&lt;&lt;&quot;), (TokenKind::LessLess, &quot;&lt;&lt;&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&gt;&gt;&quot;), (TokenKind::GreaterGreater, &quot;&gt;&gt;&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5793,7 +5793,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&gt;&gt;&quot;), (TokenKind::GreaterGreater, &quot;&gt;&gt;&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&lt;&quot;), (TokenKind::Less, &quot;&lt;&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5806,7 +5806,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&lt;&quot;), (TokenKind::Less, &quot;&lt;&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&gt;&quot;), (TokenKind::Greater, &quot;&gt;&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5819,7 +5819,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&gt;&quot;), (TokenKind::Greater, &quot;&gt;&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&lt;=&quot;), (TokenKind::LessEqual, &quot;&lt;=&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5832,7 +5832,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&lt;=&quot;), (TokenKind::LessEqual, &quot;&lt;=&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&gt;=&quot;), (TokenKind::GreaterEqual, &quot;&gt;=&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5845,7 +5845,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&gt;=&quot;), (TokenKind::GreaterEqual, &quot;&gt;=&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;==&quot;), (TokenKind::EqualEqual, &quot;==&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5858,7 +5858,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;==&quot;), (TokenKind::EqualEqual, &quot;==&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;!=&quot;), (TokenKind::ExclaEqual, &quot;!=&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5871,7 +5871,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;!=&quot;), (TokenKind::ExclaEqual, &quot;!=&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;^&quot;), (TokenKind::Caret, &quot;^&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5884,7 +5884,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;^&quot;), (TokenKind::Caret, &quot;^&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;|&quot;), (TokenKind::Pipe, &quot;|&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5897,7 +5897,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;|&quot;), (TokenKind::Pipe, &quot;|&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&amp;&amp;&quot;), (TokenKind::AmpAmp, &quot;&amp;&amp;&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5910,7 +5910,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&amp;&amp;&quot;), (TokenKind::AmpAmp, &quot;&amp;&amp;&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;||&quot;), (TokenKind::PipePipe, &quot;||&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5923,7 +5923,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;||&quot;), (TokenKind::PipePipe, &quot;||&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;?&quot;), (TokenKind::Question, &quot;?&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5936,7 +5936,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;?&quot;), (TokenKind::Question, &quot;?&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;:&quot;), (TokenKind::Colon, &quot;:&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5949,7 +5949,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;:&quot;), (TokenKind::Colon, &quot;:&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;;&quot;), (TokenKind::Semicolon, &quot;;&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5962,7 +5962,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;;&quot;), (TokenKind::Semicolon, &quot;;&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;...&quot;), (TokenKind::Ellipsis, &quot;...&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5975,7 +5975,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;...&quot;), (TokenKind::Ellipsis, &quot;...&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;=&quot;), (TokenKind::Equal, &quot;=&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -5988,7 +5988,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;=&quot;), (TokenKind::Equal, &quot;=&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;*=&quot;), (TokenKind::StarEqual, &quot;*=&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6001,7 +6001,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;*=&quot;), (TokenKind::StarEqual, &quot;*=&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&#x2F;=&quot;), (TokenKind::SlashEqual, &quot;&#x2F;=&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6014,7 +6014,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&#x2F;=&quot;), (TokenKind::SlashEqual, &quot;&#x2F;=&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;%=&quot;), (TokenKind::PercentEqual, &quot;%=&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6027,7 +6027,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;%=&quot;), (TokenKind::PercentEqual, &quot;%=&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;+=&quot;), (TokenKind::PlusEqual, &quot;+=&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6040,7 +6040,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;+=&quot;), (TokenKind::PlusEqual, &quot;+=&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;-=&quot;), (TokenKind::MinusEqual, &quot;-=&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6053,7 +6053,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;-=&quot;), (TokenKind::MinusEqual, &quot;-=&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&lt;&lt;=&quot;), (TokenKind::LessLessEqual, &quot;&lt;&lt;=&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6066,7 +6066,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&lt;&lt;=&quot;), (TokenKind::LessLessEqual, &quot;&lt;&lt;=&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&gt;&gt;=&quot;), (TokenKind::GreaterGreaterEqual, &quot;&gt;&gt;=&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6079,7 +6079,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&gt;&gt;=&quot;), (TokenKind::GreaterGreaterEqual, &quot;&gt;&gt;=&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&amp;=&quot;), (TokenKind::AmpEqual, &quot;&amp;=&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6092,7 +6092,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;&amp;=&quot;), (TokenKind::AmpEqual, &quot;&amp;=&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;^=&quot;), (TokenKind::CaretEqual, &quot;^=&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6105,7 +6105,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;^=&quot;), (TokenKind::CaretEqual, &quot;^=&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;|=&quot;), (TokenKind::PipeEqual, &quot;|=&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6118,7 +6118,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;|=&quot;), (TokenKind::PipeEqual, &quot;|=&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;,&quot;), (TokenKind::Comma, &quot;,&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6131,7 +6131,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;,&quot;), (TokenKind::Comma, &quot;,&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;#&quot;), (TokenKind::Hash, &quot;#&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6144,7 +6144,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;#&quot;), (TokenKind::Hash, &quot;#&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;##&quot;), (TokenKind::HashHash, &quot;##&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6157,7 +6157,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;##&quot;), (TokenKind::HashHash, &quot;##&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">    }</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6166,11 +6166,11 @@
                 <a href="#472">472</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                1
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
             </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    }</pre>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6179,11 +6179,11 @@
                 <a href="#473">473</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                1
             </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">    #[test]</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6196,7 +6196,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    #[test]</pre>
+                <pre class="has-background-success-light py-0 px-2">    fn scan_keywords() {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6209,7 +6209,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    fn scan_keywords() {</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;auto&quot;), (TokenKind::KwAuto, &quot;auto&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6222,7 +6222,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;auto&quot;), (TokenKind::KwAuto, &quot;auto&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;break&quot;), (TokenKind::KwBreak, &quot;break&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6235,7 +6235,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;break&quot;), (TokenKind::KwBreak, &quot;break&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;case&quot;), (TokenKind::KwCase, &quot;case&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6248,7 +6248,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;case&quot;), (TokenKind::KwCase, &quot;case&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;char&quot;), (TokenKind::KwChar, &quot;char&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6261,7 +6261,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;char&quot;), (TokenKind::KwChar, &quot;char&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;const&quot;), (TokenKind::KwConst, &quot;const&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6274,7 +6274,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;const&quot;), (TokenKind::KwConst, &quot;const&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;continue&quot;), (TokenKind::KwContinue, &quot;continue&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6287,7 +6287,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;continue&quot;), (TokenKind::KwContinue, &quot;continue&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;default&quot;), (TokenKind::KwDefault, &quot;default&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6300,7 +6300,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;default&quot;), (TokenKind::KwDefault, &quot;default&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;do&quot;), (TokenKind::KwDo, &quot;do&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6313,7 +6313,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;do&quot;), (TokenKind::KwDo, &quot;do&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;double&quot;), (TokenKind::KwDouble, &quot;double&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6326,7 +6326,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;double&quot;), (TokenKind::KwDouble, &quot;double&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;else&quot;), (TokenKind::KwElse, &quot;else&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6339,7 +6339,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;else&quot;), (TokenKind::KwElse, &quot;else&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;enum&quot;), (TokenKind::KwEnum, &quot;enum&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6352,7 +6352,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;enum&quot;), (TokenKind::KwEnum, &quot;enum&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;extern&quot;), (TokenKind::KwExtern, &quot;extern&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6365,7 +6365,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;extern&quot;), (TokenKind::KwExtern, &quot;extern&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;float&quot;), (TokenKind::KwFloat, &quot;float&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6378,7 +6378,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;float&quot;), (TokenKind::KwFloat, &quot;float&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;for&quot;), (TokenKind::KwFor, &quot;for&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6391,7 +6391,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;for&quot;), (TokenKind::KwFor, &quot;for&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;goto&quot;), (TokenKind::KwGoto, &quot;goto&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6404,7 +6404,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;goto&quot;), (TokenKind::KwGoto, &quot;goto&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;if&quot;), (TokenKind::KwIf, &quot;if&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6417,7 +6417,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;if&quot;), (TokenKind::KwIf, &quot;if&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;inline&quot;), (TokenKind::KwInline, &quot;inline&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6430,7 +6430,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;inline&quot;), (TokenKind::KwInline, &quot;inline&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;int&quot;), (TokenKind::KwInt, &quot;int&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6443,7 +6443,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;int&quot;), (TokenKind::KwInt, &quot;int&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;long&quot;), (TokenKind::KwLong, &quot;long&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6456,7 +6456,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;long&quot;), (TokenKind::KwLong, &quot;long&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;register&quot;), (TokenKind::KwRegister, &quot;register&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6469,7 +6469,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;register&quot;), (TokenKind::KwRegister, &quot;register&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;restrict&quot;), (TokenKind::KwRestrict, &quot;restrict&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6482,7 +6482,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;restrict&quot;), (TokenKind::KwRestrict, &quot;restrict&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;return&quot;), (TokenKind::KwReturn, &quot;return&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6495,7 +6495,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;return&quot;), (TokenKind::KwReturn, &quot;return&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;short&quot;), (TokenKind::KwShort, &quot;short&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6508,7 +6508,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;short&quot;), (TokenKind::KwShort, &quot;short&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;signed&quot;), (TokenKind::KwSigned, &quot;signed&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6521,7 +6521,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;signed&quot;), (TokenKind::KwSigned, &quot;signed&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;sizeof&quot;), (TokenKind::KwSizeof, &quot;sizeof&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6534,7 +6534,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;sizeof&quot;), (TokenKind::KwSizeof, &quot;sizeof&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;static&quot;), (TokenKind::KwStatic, &quot;static&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6547,7 +6547,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;static&quot;), (TokenKind::KwStatic, &quot;static&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;struct&quot;), (TokenKind::KwStruct, &quot;struct&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6560,7 +6560,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;struct&quot;), (TokenKind::KwStruct, &quot;struct&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;switch&quot;), (TokenKind::KwSwitch, &quot;switch&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6573,7 +6573,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;switch&quot;), (TokenKind::KwSwitch, &quot;switch&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;typedef&quot;), (TokenKind::KwTypedef, &quot;typedef&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6586,7 +6586,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;typedef&quot;), (TokenKind::KwTypedef, &quot;typedef&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;union&quot;), (TokenKind::KwUnion, &quot;union&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6599,7 +6599,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;union&quot;), (TokenKind::KwUnion, &quot;union&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;unsigned&quot;), (TokenKind::KwUnsigned, &quot;unsigned&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6612,7 +6612,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;unsigned&quot;), (TokenKind::KwUnsigned, &quot;unsigned&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;void&quot;), (TokenKind::KwVoid, &quot;void&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6625,7 +6625,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;void&quot;), (TokenKind::KwVoid, &quot;void&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;volatile&quot;), (TokenKind::KwVolatile, &quot;volatile&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6638,7 +6638,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;volatile&quot;), (TokenKind::KwVolatile, &quot;volatile&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;while&quot;), (TokenKind::KwWhile, &quot;while&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6651,7 +6651,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;while&quot;), (TokenKind::KwWhile, &quot;while&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;_Alignas&quot;), (TokenKind::KwAlignas, &quot;_Alignas&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6664,7 +6664,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;_Alignas&quot;), (TokenKind::KwAlignas, &quot;_Alignas&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;_Alignof&quot;), (TokenKind::KwAlignof, &quot;_Alignof&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6677,7 +6677,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;_Alignof&quot;), (TokenKind::KwAlignof, &quot;_Alignof&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;_Atomic&quot;), (TokenKind::KwAtomic, &quot;_Atomic&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6690,7 +6690,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;_Atomic&quot;), (TokenKind::KwAtomic, &quot;_Atomic&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;_Bool&quot;), (TokenKind::KwBool, &quot;_Bool&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6703,7 +6703,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;_Bool&quot;), (TokenKind::KwBool, &quot;_Bool&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;_Complex&quot;), (TokenKind::KwComplex, &quot;_Complex&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6716,7 +6716,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;_Complex&quot;), (TokenKind::KwComplex, &quot;_Complex&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;_Generic&quot;), (TokenKind::KwGeneric, &quot;_Generic&quot;));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6729,7 +6729,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(scan_first(&quot;_Generic&quot;), (TokenKind::KwGeneric, &quot;_Generic&quot;));</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6742,7 +6742,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(</pre>
+                <pre class="has-background-success-light py-0 px-2">            scan_first(&quot;_Imaginary&quot;),</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6755,7 +6755,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            scan_first(&quot;_Imaginary&quot;),</pre>
+                <pre class="has-background-success-light py-0 px-2">            (TokenKind::KwImaginary, &quot;_Imaginary&quot;)</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6768,7 +6768,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            (TokenKind::KwImaginary, &quot;_Imaginary&quot;)</pre>
+                <pre class="has-background-success-light py-0 px-2">        );</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6781,7 +6781,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        );</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6794,7 +6794,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(</pre>
+                <pre class="has-background-success-light py-0 px-2">            scan_first(&quot;_Noreturn&quot;),</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6807,7 +6807,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            scan_first(&quot;_Noreturn&quot;),</pre>
+                <pre class="has-background-success-light py-0 px-2">            (TokenKind::KwNoreturn, &quot;_Noreturn&quot;)</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6820,7 +6820,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            (TokenKind::KwNoreturn, &quot;_Noreturn&quot;)</pre>
+                <pre class="has-background-success-light py-0 px-2">        );</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6833,7 +6833,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        );</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6846,7 +6846,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(</pre>
+                <pre class="has-background-success-light py-0 px-2">            scan_first(&quot;_Static_assert&quot;),</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6859,7 +6859,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            scan_first(&quot;_Static_assert&quot;),</pre>
+                <pre class="has-background-success-light py-0 px-2">            (TokenKind::KwStaticAssert, &quot;_Static_assert&quot;)</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6872,7 +6872,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            (TokenKind::KwStaticAssert, &quot;_Static_assert&quot;)</pre>
+                <pre class="has-background-success-light py-0 px-2">        );</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6885,7 +6885,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        );</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6898,7 +6898,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(</pre>
+                <pre class="has-background-success-light py-0 px-2">            scan_first(&quot;_Thread_local&quot;),</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6911,7 +6911,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            scan_first(&quot;_Thread_local&quot;),</pre>
+                <pre class="has-background-success-light py-0 px-2">            (TokenKind::KwThreadLocal, &quot;_Thread_local&quot;)</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6924,7 +6924,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            (TokenKind::KwThreadLocal, &quot;_Thread_local&quot;)</pre>
+                <pre class="has-background-success-light py-0 px-2">        );</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6937,7 +6937,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        );</pre>
+                <pre class="has-background-success-light py-0 px-2">    }</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6946,11 +6946,11 @@
                 <a href="#532">532</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                1
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
             </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    }</pre>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6959,11 +6959,11 @@
                 <a href="#533">533</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                1
             </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">    #[test]</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6976,7 +6976,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    #[test]</pre>
+                <pre class="has-background-success-light py-0 px-2">    fn scan_two_adjacent_period_chars_as_two_separate_period_punctuations() {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -6989,7 +6989,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    fn scan_two_adjacent_period_chars_as_two_separate_period_punctuations() {</pre>
+                <pre class="has-background-success-light py-0 px-2">        assert_eq!(</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7002,7 +7002,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        assert_eq!(</pre>
+                <pre class="has-background-success-light py-0 px-2">            scan_all(&quot;..&quot;),</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7015,7 +7015,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            scan_all(&quot;..&quot;),</pre>
+                <pre class="has-background-success-light py-0 px-2">            [(TokenKind::Period, &quot;.&quot;), (TokenKind::Period, &quot;.&quot;)]</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7028,7 +7028,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            [(TokenKind::Period, &quot;.&quot;), (TokenKind::Period, &quot;.&quot;)]</pre>
+                <pre class="has-background-success-light py-0 px-2">        );</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7041,7 +7041,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        );</pre>
+                <pre class="has-background-success-light py-0 px-2">    }</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7050,11 +7050,11 @@
                 <a href="#540">540</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                1
+                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
+                
             </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    }</pre>
+            <div class="column has-background-white p-0">
+                <pre class="has-background-white py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7063,11 +7063,11 @@
                 <a href="#541">541</a>
             </div>
             <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
-                
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                1
             </div>
-            <div class="column has-background-white p-0">
-                <pre class="has-background-white py-0 px-2"></pre>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">    #[test]</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7080,7 +7080,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    #[test]</pre>
+                <pre class="has-background-success-light py-0 px-2">    fn scan_single_nondigit_char_as_identifier() {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7093,7 +7093,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    fn scan_single_nondigit_char_as_identifier() {</pre>
+                <pre class="has-background-success-light py-0 px-2">        use std::iter::once;</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7106,7 +7106,7 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        use std::iter::once;</pre>
+                <pre class="has-background-success-light py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7119,26 +7119,13 @@
                 1
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2"></pre>
+                <pre class="has-background-success-light py-0 px-2">        let nondigit_chars = once(&#x27;_&#x27;).chain(&#x27;a&#x27;..=&#x27;z&#x27;).chain(&#x27;A&#x27;..=&#x27;Z&#x27;);</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
                 id="546">
                 <a href="#546">546</a>
-            </div>
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                1
-            </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        let nondigit_chars = once(&#x27;_&#x27;).chain(&#x27;a&#x27;..=&#x27;z&#x27;).chain(&#x27;A&#x27;..=&#x27;Z&#x27;);</pre>
-            </div>
-        </div><div class="columns p-0 m-0">
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered"
-                id="547">
-                <a href="#547">547</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
@@ -7150,8 +7137,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="548">
-                <a href="#548">548</a>
+                id="547">
+                <a href="#547">547</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -7159,6 +7146,19 @@
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">        for nondigit_char in nondigit_chars {</pre>
+            </div>
+        </div><div class="columns p-0 m-0">
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered"
+                id="548">
+                <a href="#548">548</a>
+            </div>
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                53
+            </div>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">            let input_text = format!(&quot;{}&quot;, nondigit_char);</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7171,7 +7171,7 @@
                 53
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            let input_text = format!(&quot;{}&quot;, nondigit_char);</pre>
+                <pre class="has-background-success-light py-0 px-2">            let token = scan_first(&amp;input_text);</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7184,7 +7184,7 @@
                 53
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            let token = scan_first(&amp;input_text);</pre>
+                <pre class="has-background-success-light py-0 px-2"></pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7197,26 +7197,13 @@
                 53
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2"></pre>
+                <pre class="has-background-success-light py-0 px-2">            assert_eq!(token, (TokenKind::Identifier, &amp;*input_text));</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
                 id="552">
                 <a href="#552">552</a>
-            </div>
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                53
-            </div>
-            <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">            assert_eq!(token, (TokenKind::Identifier, &amp;*input_text));</pre>
-            </div>
-        </div><div class="columns p-0 m-0">
-            <div
-                class="column is-1 is-narrow p-0 has-text-centered"
-                id="553">
-                <a href="#553">553</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
@@ -7228,8 +7215,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="554">
-                <a href="#554">554</a>
+                id="553">
+                <a href="#553">553</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
@@ -7241,8 +7228,8 @@
         </div><div class="columns p-0 m-0">
             <div
                 class="column is-1 is-narrow p-0 has-text-centered"
-                id="555">
-                <a href="#555">555</a>
+                id="554">
+                <a href="#554">554</a>
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-white has-background-white">
@@ -7250,6 +7237,19 @@
             </div>
             <div class="column has-background-white p-0">
                 <pre class="has-background-white py-0 px-2"></pre>
+            </div>
+        </div><div class="columns p-0 m-0">
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered"
+                id="555">
+                <a href="#555">555</a>
+            </div>
+            <div
+                class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
+                2
+            </div>
+            <div class="column has-background-success-light p-0">
+                <pre class="has-background-success-light py-0 px-2">    fn identifier() -&gt; impl Strategy&lt;Value = String&gt; {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7262,7 +7262,7 @@
                 2
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">    fn identifier() -&gt; impl Strategy&lt;Value = String&gt; {</pre>
+                <pre class="has-background-success-light py-0 px-2">        use super::get_keyword_kind_for_lexeme;</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7275,7 +7275,7 @@
                 2
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        use super::get_keyword_kind_for_lexeme;</pre>
+                <pre class="has-background-success-light py-0 px-2">        use proptest::string::string_regex;</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7301,7 +7301,7 @@
                 2
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        let ident = proptest::string::string_regex(&quot;[_a-zA-Z][_0-9a-zA-Z]*&quot;).unwrap();</pre>
+                <pre class="has-background-success-light py-0 px-2">        let ident_strategy = string_regex(&quot;[_a-zA-Z][_0-9a-zA-Z]*&quot;).unwrap();</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7324,10 +7324,10 @@
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                511
+                512
             </div>
             <div class="column has-background-success-light p-0">
-                <pre class="has-background-success-light py-0 px-2">        ident.prop_filter(&quot;must not be a keyword&quot;, |ident| {</pre>
+                <pre class="has-background-success-light py-0 px-2">        ident_strategy.prop_filter(&quot;must not be a keyword&quot;, |ident| {</pre>
             </div>
         </div><div class="columns p-0 m-0">
             <div
@@ -7337,7 +7337,7 @@
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                511
+                512
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">            get_keyword_kind_for_lexeme(ident).is_none()</pre>
@@ -7350,7 +7350,7 @@
             </div>
             <div
                 class="column is-1 is-narrow p-0 has-text-centered has-text-success-light has-background-success">
-                511
+                512
             </div>
             <div class="column has-background-success-light p-0">
                 <pre class="has-background-success-light py-0 px-2">        })</pre>
@@ -10049,7 +10049,7 @@
         </div></div>
         <footer class="footer">
             <div class="content has-text-centered">
-                <p class="heading">Date: 2022-03-02 22:29</p>
+                <p class="heading">Date: 2022-03-05 23:13</p>
             </div>
         </footer>
     </body>
